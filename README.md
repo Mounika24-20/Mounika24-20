@@ -45,7 +45,7 @@
   <a href="mailto:mounikaboyapati2005@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-<a href="https://https://personalportfolio-git-master-mounika-boyapatis-projects.vercel.app" target="_blank">
+<a href="https://https://personalportfolio-git-master-mounika-boyapatis-projects.vercel.app.com" target="_blank">
 
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=githubpages&logoColor=white" />
   </a>
