@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Student Registration System</h1>
+            <p>Admin Portal - Register New Students</p>
+        </header>
+
+        <main class="main-content">
+            <div class="form-container">
+                <h2>Student Registration Form</h2>
+                <form id="studentForm" class="registration-form">
+                    <!-- Personal Information Section -->
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dateOfBirth">Date of Birth *</label>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender">
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="studentId">Student ID *</label>
+                            <input type="text" id="studentId" name="studentId" placeholder="e.g., STU2024001" required>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information Section -->
+                    <div class="form-section">
+                        <h3>Contact Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="student@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" rows="3" placeholder="Enter full address"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city">
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state">
+                            </div>
+                            <div class="form-group">
+                                <label for="zipCode">ZIP Code</label>
+                                <input type="text" id="zipCode" name="zipCode">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Contact Section -->
+                    <div class="form-section">
+                        <h3>Emergency Contact</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="emergencyName">Contact Name *</label>
+                                <input type="text" id="emergencyName" name="emergencyName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emergencyRelation">Relationship *</label>
+                                <select id="emergencyRelation" name="emergencyRelation" required>
+                                    <option value="">Select Relationship</option>
+                                    <option value="parent">Parent</option>
+                                    <option value="guardian">Guardian</option>
+                                    <option value="sibling">Sibling</option>
+                                    <option value="spouse">Spouse</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="emergencyPhone">Phone Number *</label>
+                                <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emergencyEmail">Email Address</label>
+                                <input type="email" id="emergencyEmail" name="emergencyEmail">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Information Section -->
+                    <div class="form-section">
+                        <h3>Academic Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="grade">Grade Level *</label>
+                                <select id="grade" name="grade" required>
+                                    <option value="">Select Grade</option>
+                                    <option value="9">Grade 9</option>
+                                    <option value="10">Grade 10</option>
+                                    <option value="11">Grade 11</option>
+                                    <option value="12">Grade 12</option>
+                                    <option value="undergraduate">Undergraduate</option>
+                                    <option value="graduate">Graduate</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="enrollmentDate">Enrollment Date *</label>
+                                <input type="date" id="enrollmentDate" name="enrollmentDate" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="classes">Classes/Subjects *</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="classes" value="mathematics">
+                                    <span>Mathematics</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="classes" value="english">
+                                    <span>English Literature</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="classes" value="science">
+                                    <span>Science</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="classes" value="history">
+                                    <span>History</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="classes" value="art">
+                                    <span>Art</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="classes" value="music">
+                                    <span>Music</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="classes" value="physical-education">
+                                    <span>Physical Education</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="classes" value="computer-science">
+                                    <span>Computer Science</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalNotes">Additional Notes</label>
+                            <textarea id="additionalNotes" name="additionalNotes" rows="3" placeholder="Any special requirements, medical conditions, or additional information..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="clearForm">Clear Form</button>
+                        <button type="submit" class="btn btn-primary">Register Student</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Success Message -->
+            <div id="successMessage" class="success-message hidden">
+                <div class="success-content">
+                    <div class="success-icon">✓</div>
+                    <h3>Student Registered Successfully!</h3>
+                    <p>The student has been added to the system.</p>
+                    <button type="button" class="btn btn-primary" id="registerAnother">Register Another Student</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
