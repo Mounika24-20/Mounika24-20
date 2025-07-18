@@ -1,7 +1,7 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "=<!-- Profile Header --> <p align=\"center\">   <img src=\"https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B%2C+I'm+Boyapati+Mounika!;Software+Engineer+%F0%9F%92%BB;Python+%7C+Java+%7C+JavaScript+Dev\" alt=\"Typing SVG\" /> </p>",
+  "description": "A simple student registration system using HTML, CSS, and JavaScript.",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
